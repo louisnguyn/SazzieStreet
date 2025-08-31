@@ -1,0 +1,25 @@
+.header{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-between;
+    padding: 1rem 4rem;
+}
+nav a {
+  margin: 0 0.4rem;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 1s;
+  color:black;
+  padding: 1rem 1rem;
+}
+nav a:not(.active):hover {
+    background-color: var(--color-bg-dark);
+    border-radius:8px;
+}
+nav a.active {
+    border-bottom: 2px solid var(--color-bg-active);
+}
+nav a:active{
+    color: black;
+}
