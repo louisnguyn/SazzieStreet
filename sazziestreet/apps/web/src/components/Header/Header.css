@@ -23,3 +23,49 @@ nav a.active {
 nav a:active{
     color: black;
 }
+.header-mobile{
+    display:none;
+}
+.mobile-nav{
+    display:none;
+}
+@media (max-width: 700px) {
+    .header-mobile{
+        display:flex;
+        flex-direction: column;
+        align-items: stretch;
+        padding: 1rem 1.5rem;
+        gap: 1rem;
+    }
+    .mobile-nav{
+        display:flex;
+        flex-direction:row;
+        align-items: center;
+        justify-content:space-between;
+    }
+    .mobile-nav-links{
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        top: 100%;
+        gap: 1rem;
+        margin-top: 1rem;
+    }
+    .mobile-nav-links a{
+        text-decoration:none;
+    }
+    .mobile-nav-links.open {
+        display: flex;
+    }
+    .header{
+        display:none;
+    }
+    .hamburger {
+        display: block;
+        transition: transform 0.4s cubic-bezier(0.4, 0.2, 0.2, 1);
+        margin: 0; 
+    }
+    .hamburger.open {
+        transform: rotate(360deg);
+    }
+}
