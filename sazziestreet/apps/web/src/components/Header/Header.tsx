@@ -9,11 +9,12 @@ export default function Header(){
     return (
         <div>
             <header className="header">
-                <p>Lotus & Flame</p>
+                <p>SazzieStreetLogoHere</p>
                 <nav>
                     <NavLink to="/" className={({ isActive }) => (isActive ? "active" : "")}>Home</NavLink>
                     <NavLink to="/about" className={({ isActive }) => (isActive ? "active" : "")}>About Us</NavLink>
                     <NavLink to="/contact" className={({ isActive }) => (isActive ? "active" : "")}>Contact Us</NavLink>
+                    <NavLink to="/our-story" className={({ isActive }) => (isActive ? "active" : "")}>Our Story</NavLink>
                 </nav>
                 <nav>
                     <NavLink to="/login"><FaUser /></NavLink>
@@ -22,7 +23,7 @@ export default function Header(){
             </header>
             <header className="header-mobile">
                 <div className="mobile-nav">
-                    <p>Lotus & Flame</p>
+                    <p>SazzieStreetLogoHere</p>
                     <nav>
                         <div
                             className={`hamburger${menuOpen ? " open" : ""}`}
@@ -37,6 +38,7 @@ export default function Header(){
                     <NavLink to="/" className={({ isActive }) => (isActive ? "active" : "")}>Home</NavLink>
                     <NavLink to="/about" className={({ isActive }) => (isActive ? "active" : "")}>About Us</NavLink>
                     <NavLink to="/contact" className={({ isActive }) => (isActive ? "active" : "")}>Contact Us</NavLink>
+                    <NavLink to="/our-story" className={({ isActive }) => (isActive ? "active" : "")}>Our Story</NavLink>
                     <NavLink to="/login"><FaUser /></NavLink>
                     <NavLink to="/cart"><FaShoppingCart /></NavLink>
                 </div>

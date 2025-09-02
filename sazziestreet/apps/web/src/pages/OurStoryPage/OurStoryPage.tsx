@@ -1,6 +1,6 @@
-import "./MainPage.css"
+import "./OurStoryPage.css"
 import MainPageLayout from "../../layout/MainPageLayout/MainPageLayout"
-export default function MainPage(){
+export default function OurStoryPage(){
     return (
         <MainPageLayout>
             <h1>Hello Sara</h1>

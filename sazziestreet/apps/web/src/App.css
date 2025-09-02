@@ -1,8 +1,8 @@
 :root {
-  --color-bg-light: rgb(220, 250, 255);
-  --color-bg-main: rgb(182, 244, 252);
-  --color-bg-dark: rgb(132, 237, 250);
-  --color-bg-active: rgb(45, 216, 250);
+  --color-bg-light: rgb(174, 250, 241);
+  --color-bg-main: rgb(110, 251, 234);
+  --color-bg-dark: rgba(0, 252, 222, 0.845);
+  --color-bg-active: rgb(0, 191, 249);
   --color-accent: rgb(252, 182, 244);
   --color-neutral: rgb(60, 80, 100);
 }

@@ -1,9 +1,9 @@
-import Header from "../../components/Header/Header"
+import "./About.css"
+import MainPageLayout from "../../layout/MainPageLayout/MainPageLayout"
 export default function AboutPage(){
     return (
-        <div className="body">
-            <Header/>
+        <MainPageLayout>
             <h1>About Us</h1>
-        </div>
+        </MainPageLayout>
     )
 }

@@ -1,9 +1,9 @@
-import Header from "../../components/Header/Header"
+import "./Contact.css"
+import MainPageLayout from "../../layout/MainPageLayout/MainPageLayout"
 export default function ContactPage(){
     return (
-        <div className="body">
-            <Header/>
+        <MainPageLayout>
             <h1>Contact Us</h1>
-        </div>
+        </MainPageLayout>
     )
 }
