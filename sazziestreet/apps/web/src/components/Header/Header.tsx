@@ -4,6 +4,7 @@ import { FaUser } from 'react-icons/fa';
 import { FaShoppingCart } from 'react-icons/fa';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import {useState} from "react"
+import { AiOutlineClose } from 'react-icons/ai';
 export default function Header(){
     const [menuOpen, setMenuOpen] = useState(false);
     return (
@@ -30,7 +31,7 @@ export default function Header(){
                             onClick={() => setMenuOpen((open) => !open)}
                             aria-label={menuOpen ? "Close menu" : "Open menu"}
                         >
-                            <GiHamburgerMenu />
+                            {menuOpen ? <AiOutlineClose /> : <GiHamburgerMenu />}
                         </div>
                     </nav>
                 </div>
@@ -39,8 +40,8 @@ export default function Header(){
                     <NavLink to="/about" className={({ isActive }) => (isActive ? "active" : "")}>About Us</NavLink>
                     <NavLink to="/contact" className={({ isActive }) => (isActive ? "active" : "")}>Contact Us</NavLink>
                     <NavLink to="/our-story" className={({ isActive }) => (isActive ? "active" : "")}>Our Story</NavLink>
-                    <NavLink to="/login"><FaUser /></NavLink>
-                    <NavLink to="/cart"><FaShoppingCart /></NavLink>
+                    <NavLink to="/login"><FaUser /><span style={{marginLeft:10}}>Login</span></NavLink>
+                    <NavLink to="/cart"><FaShoppingCart /><span style={{marginLeft:10}}>Cart</span></NavLink>
                 </div>
             </header>
         </div>

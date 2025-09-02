@@ -16,11 +16,11 @@ export default function Footer() {
                     <Link to="https://www.facebook.com/profile.php?id=61567966872695"><FaFacebook /></Link>
                     <Link to="/contact">Contact</Link>
                     <Link to="https://www.instagram.com/sazziestreet/"><FaInstagram /></Link>
-                    <Link to="/privacy">Our Story</Link>
+                    <Link to="/our-story">Our Story</Link>
                     <Link to="https://www.tiktok.com/@sazziestreet"><FaTiktok /></Link>
                 </div>
             </div>
-            <div className="footer-section">
+            <div className="footer-logo">
                 SazzieStreet Logo Here
             </div>
             <div className="footer-section">
